@@ -13,7 +13,11 @@
     "body-parser": "^1.18.2",
     "ejs": "^2.5.7",
     "express": "^4.16.3",
+    "fcm-node": "^1.2.1",
+    "firebase": "^4.11.0",
     "mysql": "^2.15.0",
-    "nodemailer": "^4.6.3"
+    "nodemailer": "^4.6.3",
+    "sendotp": "^1.2.8",
+    "twilio": "^3.13.1"
   }
 }

@@ -23,15 +23,7 @@ app.post('/login', api.login);
 app.put('/edit', api.update);
 
 //get users info
-app.get('/users/:id', api.getUser);
-
-// app.get('/users/:id', function(req, res){
-//     con.query('select * from users where id = ?',[req.params.id], 
-//     function (err, results, fields){
-//         if(err) throw err;
-//             res.end(JSON.stringify(results));      
-//     });
-// });
+app.get('/users', api.getUser);
 
 //forgot-password
 app.get('/forgot-password', function(req, res){
@@ -42,6 +34,15 @@ app.post('/forgot-password', api.forgot);
 
 //reset-password
 app.post('/reset-password', api.reset);
+
+//fcm users-device
+app.post('/device', api.users_device);
+
+//sending otp
+app.post('/check', api.insertion);
+
+//verifying otp
+// app.post('/verify', api.verify);
 
 app.listen(8080);
 
